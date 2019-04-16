@@ -3,47 +3,192 @@
   --VeryPaleCyan: hsl(193, 100%, 96%);
   --GrayishBlue: hsl(208, 11%, 55%);
   --Shadow: 0 1px 5px rgba(104, 104, 0.8);
+  --MarginBoxes: 50px 40px;
 
 
 }
 
- html {
+ body {
    font-family: 'Open Sans', sans-serif;
+   margin: 0;
+   padding: 0;
+   font-size: 18px;
  }
+
+ /* Top grid */
 .top-wrap {
   display: grid;
   background: url(images/bg-hero-desktop.svg);
   background-color: var(--VeryPaleCyan);
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: 1fr 400px;
   grid-template-areas:
-  "logo btn"
+  "nav nav"
   "words chatimg";
 }
 
-.logo {
-  grid-area: logo;
-  padding: 60px 0 20px 60px;
-}
-
- #free-btn {
-  grid-area: btn;
-  justify-content: flex-end;
+nav {
+  grid-area: nav;
   display: flex;
-  padding: 65px 20px 50px 0;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 40px;
+  justify-content: space-between;
+  align-items: center;/*Makes the items go to bottom, for it not being a padding*/
+  margin: 20px 100px;
+
 
 }
 
-.words {
+.words{
   grid-area: words;
+  padding: 70px 100px;
 }
 
 .mockup {
   background-image: url(images/illustration-mockups.svg);
-  background-size: 100%;
+  background-size: 70%;
   background-repeat: no-repeat;
+}
 
+/* Mid section *********************/
+.middle-wrap {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  display: grid;
+  padding: 50px;
+  margin-top: 80px;
+  grid-gap: 20px;
+
+}
+/* Top box */
+.top-box {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 500px;
+  display: grid;
+  place-content: center;
+  box-shadow: 0px 0px 19px -2px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+/* Contents of top box */
+.wordsone{
+  padding-left: 20px;
+  align-content: center;
+  padding: var(--MarginBoxes);
+}
+
+.imgone {
+  background: url(images/illustration-grow-together.svg);
+  background-size: contain;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+}
+
+/*Middle box  */
+.middle-box{
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px;
+  display: grid;
+  place-content: center;
+  box-shadow: 0px 0px 19px -2px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+/* Content of middle box */
+.imgtwo{
+ background: url(images/illustration-flowing-conversation.svg);
+  background-size: contain;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+}
+.wordstwo{
+  padding-left: 20px;
+  align-content: center;
+  padding: var(--MarginBoxes);
+}
+
+/* Bottom box */
+.bottom-box{
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px;
+  display: grid;
+  place-content: center;
+  box-shadow: 0px 0px 19px -2px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+/* Bttom box content */
+.wordsthree{
+  padding-left: 20px;
+  align-content: center;
+  padding: var(--MarginBoxes);
+}
+
+.imgthree{
+  background: url(images/illustration-your-users.svg);
+  background-size: contain;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+}
+
+/* Footer */
+.bottom-wrap{
+  display: grid;
+  grid-template-areas:
+    "popup"
+    "contactsocials";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+
+}
+
+.banner{
+  grid-area: popup;
+  text-align: center;
+  justify-self: center;
+  border: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px -3px rgba(11, 12, 9, 0.24);
+  margin: -90px;
+  width: 40%;
+  font-size: 20px;
+  background: white;
+  height: 30%;
+  padding-top: 50px;
+}
+
+footer{
+  grid-area: contactsocials;
+  background: hsl(192, 100%, 9%);
+  margin-top: 160px;
+}
+
+.bottomfooter {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  background: hsl(192, 100%, 9%);
+}
+
+.contactlist {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.contactlist .contactlist > div {
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+}
+
+.firstlinks {
+  align-self: flex-start;
+  padding-top: 30px;
+}
+
+.botlogo {
+  background: url(images/logo.svg) no-repeat;
 }
