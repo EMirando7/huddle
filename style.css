@@ -64,8 +64,8 @@ nav {
   grid-template-rows: repeat(3, 1fr);
   display: grid;
   padding: 50px;
-  margin-top: 80px;
-  grid-gap: 20px;
+  margin-top: 110px;
+  grid-gap: 60px;
 
 }
 /* Top box */
@@ -148,10 +148,15 @@ nav {
   display: grid;
   grid-template-areas:
     "popup"
-    "contactsocials";
+    "bottom";
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
 
+}
+
+footer {
+  grid-area: bottom;
+  margin-top: -40px;
 }
 
 .banner{
@@ -160,46 +165,105 @@ nav {
   justify-self: center;
   border: white;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px -3px rgba(11, 12, 9, 0.24);
-  margin: 90px;
+  box-shadow: 0px 0px 30px 0px rgba(121, 121, 122, 0.83);
+  transform: translateY(80%);
   width: 60%;
   font-size: 20px;
-  background: white;
-  height: 30%;
+  height: 250px;
+  background-color: white;
+}
+
+.banner h2 {
   padding-top: 50px;
 }
 
-/* footer{
-  grid-area: contactsocials;
+.bottomfootercontent {
   background: hsl(192, 100%, 9%);
-  margin-top: 160px; */
-/* } */
-
- div .bottomfooter {
-  display: flex;
-  height: 30%;
   color: white;
+  height: 100%;
+  padding-top: 150px;
+  padding-left: 100px;
   justify-content: space-between;
-  background: hsl(192, 100%, 9%);
+  display: flex;
 }
 
-.contactlist {
-  display: flex;
-  flex-direction: column;
-  width: 30%;
+.contactlist > i{
+  padding-right: 5px;
+}
+.botlogo img {
+  width: 100%;
+  height: 100%;
+}
+
+.botlogowrap {
+  margin-bottom: 20px;
 }
 
 .contactlist > div {
   display: flex;
-  align-items: baseline;
   width: 100%;
+  align-items: baseline;
+  font-size: 12px;
 }
 
-.firstlinks {
+.firstlinks{
+  padding-top: 20px;
+  display: inline-block;
+}
+
+.firstlinks a{
   align-self: flex-start;
-  padding-top: 30px;
+  /* padding-top: 30px; */
+  text-decoration: none;
+  color: white;
+
 }
 
-.botlogo {
-  background: url(images/logo.svg) no-repeat;
+.firstlinks ul {
+  list-style-type: none;
+  font-size: 14px;
+  padding-top: 50px;
+}
+
+.firstlinks ul > li {
+  padding: 10px;
+}
+.secondlinks ul{
+  list-style-type: none;
+  font-size: 14px;
+  padding-top: 65px;
+}
+.secondlinks a {
+  align-self: flex-start;
+  /* padding-top: 30px; */
+  text-decoration: none;
+  color: white;
+
+}
+
+.secondlinks ul > li {
+  padding: 10px;
+}
+
+.social {
+  align-self: flex-start;
+  padding-top: 80px;
+}
+
+.social > a {
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  border-radius:50%;
+  padding: 5px;
+}
+
+.copyrights {
+  margin-top: 90px;
+  color: white;
+  font-size: 8px;
+}
+
+.copyrights :visited {
+  color:inherit;
 }
