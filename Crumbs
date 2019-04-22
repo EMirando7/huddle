@@ -1,0 +1,25 @@
+The Huddle1 project: https://github.com/Emirando117/Emirando117.github.io
+
+HTML
+
+I envisioned the project as detailed as possible.  I did not take into account the grid systems while writing the markup. I went with a mindset of assigning classes to EVERY element. 
+
+Why: Past practices that taught me to use everything on the markup or to style it in the future using CSS. But in reality, as simple as the project is, there was no need. Again, better planning of the plan would of saved me time naming elements. 
+
+
+
+The naming of the of classes is still a struggle that I will practice with time. In the development of the markup, I shrug off how messy CSS can get with rules that have bad name selectors. This is can be fixed with more planning of the structure of the project to portray an easy and fast way to name parts of the markup. 
+
+Why: So eager to work on the CSS rules and dive into Grid Layout that I have the idea of just keep checking on the back of my head, which is bad because it retrieved from time that I could use on building the rules, also concentration is broken when I got to look at what I named certain class in the HTML markup. 
+
+Due to not having a second monitor, I will write on paper the planning and mostly the naming of classes for easy access to build the styling. 
+
+CSS 
+
+Inducting into the styling sheet the rules of the project were of utmost importance. It involved the gamut of my knowledge of CSS rules and specificity. Truthfully, I still have much to learn to use several examples of selectors specificity but I am proud of the conceptual attempts done , for example with the greater than (> ) selectors. 
+
+The use of Grid Layout was new to me. Having to conceptualize how grid areas work was sort of a finesse that made me think outside the box of how I usually thought of writing code. 
+
+The use of Flex Layout is still in its early stages in me, but I will learn how to use it. Gradually, for now, I like Grid a lot more, so I will concentrate on that for future projects. 
+This will be covered when I go back in a couple of weeks time to refactor most of the project’s code for readability and usefulness. 
+
